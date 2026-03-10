@@ -9,3 +9,7 @@ Route::get('/', function () {
 
 Route::get('/task-1', [TestController::class, 'taskOne']);
 Route::get('/task-2', [TestController::class, 'taskTwo']);
+
+Route::get('/task-3', function () {
+    return view('task3');
+});
